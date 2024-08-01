@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    position: relative;
+    margin-top: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    border: 1px solid gray;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.headphone-img {
+    width: 280px;
+}
+
+
+img {
+    width: 100%;
+}
+
+.header {
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.star-rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 15px;
+   
+}
+.number {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.star-icon{
+    color: gold;
+}
+
+.container .header:hover{
+    color: red;
+}
+
+.cart, .eye, .love-icon, .rendom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: red;
+}
+.cart:hover, .eye:hover, .love-icon:hover, .rendom:hover {
+    color: white;
+    background-color: red;
+}
+
+.cart-eye-container {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+  }
+  
+  .container:hover .cart-eye-container {
+    opacity: 1;
+  }
+  
+  .cart-eye-container div {
+    transform: translateY(-60px);
+    opacity: 0;
+    transition: opacity 0.4s ease-in, transform  0.4s ease-in;
+  }
+
+ 
+
+
+  
+  .container:hover .cart-eye-container div:nth-child(1) {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+  
+  .container:hover .cart-eye-container div:nth-child(2) {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.2s;
+  }
+  
+  .container:hover .cart-eye-container div:nth-child(3) {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+  
+  .container:hover .cart-eye-container div:nth-child(4) {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.4s;
+  } 
+ 
